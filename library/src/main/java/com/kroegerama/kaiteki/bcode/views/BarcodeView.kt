@@ -154,10 +154,10 @@ class BarcodeView @JvmOverloads constructor(
         val viewFinderWidth = textureView.width.toFloat()
         val viewFinderHeight = textureView.height.toFloat()
         val viewFinderRotation = when (textureView.display.rotation) {
-            Surface.ROTATION_0 -> 0
-            Surface.ROTATION_90 -> 90
-            Surface.ROTATION_180 -> 180
-            Surface.ROTATION_270 -> 270
+            Surface.ROTATION_0 -> 90
+            Surface.ROTATION_90 -> 0
+            Surface.ROTATION_180 -> 270
+            Surface.ROTATION_270 -> 180
             else -> return
         }
         val matrix = Matrix()
